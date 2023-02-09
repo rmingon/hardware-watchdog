@@ -1,12 +1,23 @@
-# Hardware PCB
+# Hardware PCB - LICENCE (CC BY-NC-SA 4.0)
 
 ## Based on TPL5010
 
 ### For work you will need solder ONE jumper for setting delay of watchdog
 
+### PINOUT 
+
+- VDD - 1.8 to 5.5V
+- GND
+- DELAY (DLY) - Time Interval set and Manual Reset
+- DONE - Logic Input for watchdog functionality
+- WAKE - Timer output signal generated every Digital pulsed signal to wake up the µC at the end of tIP period.
+- RST - Reset Output (open drain output)
+
 ### You can too add your delay with the 'delay' (DLY on silkscreen) see bellow (MORE IN DATASHEET)
 
 ![DELAY](https://github.com/rmingon/hardware-watchdog/blob/main/TPL5010-delay.png?raw=true)
+
+
 
 #### TODO 
 - [X] Add TPL5010
